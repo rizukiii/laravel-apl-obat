@@ -13,7 +13,14 @@ return new class extends Migration
     {
         Schema::create('drugs', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('clasification_id');
+            $table->text('image');
+            $table->string('name');
+            $table->text('description');
+            $table->double('price');
             $table->timestamps();
+
+            $table->foreign('clasification_id')->references('id')->on('clasifications')->cascadeOnUpdate()->cascadeOnDelete();
         });
     }
 

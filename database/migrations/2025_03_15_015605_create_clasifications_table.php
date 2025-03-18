@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('clasifications', function (Blueprint $table) {
             $table->id();
+            $table->text('image');
+            $table->string('name');
+            $table->text('description');
             $table->timestamps();
         });
     }
