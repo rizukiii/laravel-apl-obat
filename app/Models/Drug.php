@@ -16,12 +16,13 @@ class Drug extends Model
         'image',
         'name',
         'description',
+        'price',
     ];
 
     public function casts(){
         return [
             'created_at' => 'datetime',
-            'updated_at' => 'detetime',
+            'updated_at' => 'datetime',
         ];
     }
 

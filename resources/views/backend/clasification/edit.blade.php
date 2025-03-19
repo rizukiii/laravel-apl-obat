@@ -8,7 +8,7 @@
                 <div class="col-6">
                     <h2 class="my-3">Informasi Data</h2>
                     <table class="table table-responsive">
-                        <tbody>
+                        <tbody class="btn">
                             <tr>
                                 <th>Gambar</th>
                                 <th>:</th>

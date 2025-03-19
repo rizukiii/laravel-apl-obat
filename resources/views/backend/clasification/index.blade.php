@@ -3,6 +3,7 @@
 @section('content')
     <main>
         <div class="container my-3">
+            <h1 class="text-center my-3">Klasifikasi</h1>
             @include('backend.partials.alert')
             <div class="row">
                 <div class="col-8">

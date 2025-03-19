@@ -18,13 +18,13 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active ms-3" href="#" aria-current="page"
+                        <a class="nav-link ms-3 {{ Route::currentRouteName() == 'clasification.index' ? 'active' : '' }}"  href="{{ route('clasification.index') }}" aria-current="page"
                             >Klasifikasi
                             <span class="visually-hidden">(current)</span></a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Obat</a>
+                        <a class="nav-link {{ Route::currentRouteName() == 'drug.index' ? 'active' : '' }}" href="{{ route('drug.index') }}">Obat</a>
                     </li>
                 </ul>
                 <div class="d-flex my-2 my-lg-0">
