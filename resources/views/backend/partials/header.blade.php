@@ -28,7 +28,7 @@
                     </li>
                 </ul>
                 <div class="d-flex my-2 my-lg-0">
-                    <a href="" class="navbar-brand">Logout</a>
+                    <a href="{{ route('logout') }}" class="navbar-brand">Logout</a>
                 </div>
             </div>
         </div>
